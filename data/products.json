@@ -1,0 +1,652 @@
+[
+  {
+    "id": "ali-1001",
+    "title": "Auriculares Inalámbricos TWS ANC Bluetooth 5.3 con Pantalla LED Táctil OEM",
+    "category": "Tecnología y Gadgets",
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Shenzhen Acoustics Tech Co., Ltd.",
+      "years": 6,
+      "verified": true,
+      "rating": 4.8,
+      "city": "Shenzhen, China"
+    },
+    "moq": 10,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 10, "maxQty": 49, "price": 7.80 },
+      { "minQty": 50, "maxQty": 199, "price": 6.40 },
+      { "minQty": 200, "maxQty": null, "price": 5.20 }
+    ],
+    "weightKg": 0.18,
+    "volumeCbm": 0.0008,
+    "leadTimeDays": "12-18 días (Aéreo) / 35-45 días (Marítimo)",
+    "featured": true,
+    "description": "Auriculares TWS de fábrica directa en Shenzhen con cancelación activa de ruido (ANC), estuche con pantalla táctil inteligente y autonomía de 36 horas. Ideal para reventa en tiendas de electrónica en Venezuela."
+  },
+  {
+    "id": "ali-1002",
+    "title": "Smartwatch Ultra Series 9 49mm IP68 Correa Ocean Acero Inoxidable al Mayor",
+    "category": "Tecnología y Gadgets",
+    "images": [
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Dongguan SmartWear Industrial Ltd.",
+      "years": 5,
+      "verified": true,
+      "rating": 4.9,
+      "city": "Dongguan, China"
+    },
+    "moq": 5,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 5, "maxQty": 29, "price": 11.50 },
+      { "minQty": 30, "maxQty": 99, "price": 9.80 },
+      { "minQty": 100, "maxQty": null, "price": 8.40 }
+    ],
+    "weightKg": 0.22,
+    "volumeCbm": 0.0009,
+    "leadTimeDays": "12-18 días (Aéreo) / 35-45 días (Marítimo)",
+    "featured": true,
+    "description": "Reloj inteligente con pantalla AMOLED de 2.1 pulgadas, llamadas Bluetooth, asistente de voz, brújula y carga inalámbrica. Incluye caja sellada y 2 correas intercambiables."
+  },
+  {
+    "id": "ali-1003",
+    "title": "Mini Proyector Portátil Full HD 1080P Android 11 WiFi 6 Giratorio 180°",
+    "category": "Tecnología y Gadgets",
+    "images": [
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Guangzhou Vision Optoelectronics Co.",
+      "years": 8,
+      "verified": true,
+      "rating": 4.7,
+      "city": "Guangzhou, China"
+    },
+    "moq": 2,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 2, "maxQty": 9, "price": 29.00 },
+      { "minQty": 10, "maxQty": 49, "price": 25.50 },
+      { "minQty": 50, "maxQty": null, "price": 22.80 }
+    ],
+    "weightKg": 0.85,
+    "volumeCbm": 0.0045,
+    "leadTimeDays": "12-18 días (Aéreo) / 35-45 días (Marítimo)",
+    "featured": true,
+    "description": "El proyector viral HY300 con corrección trapezoidal automática, soporte 4K decodificado y altavoz Hi-Fi integrado. Uno de los productos más importados hacia Latinoamérica."
+  },
+  {
+    "id": "ali-1004",
+    "title": "Power Bank Carga Rápida 65W 20000mAh PD con Cables Integrados USB-C y Lightning",
+    "category": "Tecnología y Gadgets",
+    "images": [
+      "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Shenzhen VoltCore Energy Co., Ltd.",
+      "years": 7,
+      "verified": true,
+      "rating": 4.8,
+      "city": "Shenzhen, China"
+    },
+    "moq": 10,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 10, "maxQty": 49, "price": 9.90 },
+      { "minQty": 50, "maxQty": 199, "price": 8.60 },
+      { "minQty": 200, "maxQty": null, "price": 7.50 }
+    ],
+    "weightKg": 0.38,
+    "volumeCbm": 0.0012,
+    "leadTimeDays": "15-20 días (Aéreo Especial Baterías) / 35-45 días (Marítimo)",
+    "featured": false,
+    "description": "Batería externa de alta capacidad apta para laptops y teléfonos, con indicador digital de porcentaje y protección contra sobrecarga."
+  },
+  {
+    "id": "ali-1005",
+    "title": "Aro de Luz LED Profesional 18 Pulgadas con Trípode de 2.1m y 3 Soportes para Celular",
+    "category": "Tecnología y Gadgets",
+    "images": [
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Yiwu Creator Studio Gear Factory",
+      "years": 4,
+      "verified": true,
+      "rating": 4.6,
+      "city": "Yiwu, China"
+    },
+    "moq": 5,
+    "unit": "sets",
+    "priceTiers": [
+      { "minQty": 5, "maxQty": 19, "price": 13.20 },
+      { "minQty": 20, "maxQty": 99, "price": 11.00 },
+      { "minQty": 100, "maxQty": null, "price": 9.40 }
+    ],
+    "weightKg": 1.6,
+    "volumeCbm": 0.015,
+    "leadTimeDays": "35-45 días (Marítimo recomendado)",
+    "featured": false,
+    "description": "Kit de iluminación completo para estudios de belleza, contenido en TikTok/Instagram y fotografía. Temperatura regulable de 3200K a 5600K con control remoto."
+  },
+  {
+    "id": "ali-1006",
+    "title": "Freidora de Aire Digital 6.5 Litros Sin Aceite 1800W Ventana Visible Acero Inoxidable",
+    "category": "Hogar y Cocina",
+    "images": [
+      "https://images.unsplash.com/photo-1585515320310-259814833e62?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Ningbo HomeAppliance Electrical Co.",
+      "years": 10,
+      "verified": true,
+      "rating": 4.9,
+      "city": "Ningbo, China"
+    },
+    "moq": 4,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 4, "maxQty": 19, "price": 24.50 },
+      { "minQty": 20, "maxQty": 99, "price": 21.00 },
+      { "minQty": 100, "maxQty": null, "price": 18.20 }
+    ],
+    "weightKg": 4.2,
+    "volumeCbm": 0.038,
+    "leadTimeDays": "35-45 días (Marítimo recomendado)",
+    "featured": true,
+    "description": "Freidora de aire familiar con panel táctil LED y 8 programas preestablecidos. Voltaje 110V enchufe americano listo para usar en Venezuela."
+  },
+  {
+    "id": "ali-1007",
+    "title": "Licuadora Portátil Recargable USB 6 Cuchillas Acero Inoxidable 380ml Libre de BPA",
+    "category": "Hogar y Cocina",
+    "images": [
+      "https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Zhongshan KitchenPro Mfg.",
+      "years": 6,
+      "verified": true,
+      "rating": 4.7,
+      "city": "Zhongshan, China"
+    },
+    "moq": 20,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 20, "maxQty": 99, "price": 3.40 },
+      { "minQty": 100, "maxQty": 499, "price": 2.85 },
+      { "minQty": 500, "maxQty": null, "price": 2.40 }
+    ],
+    "weightKg": 0.45,
+    "volumeCbm": 0.0022,
+    "leadTimeDays": "35-45 días (Marítimo)",
+    "featured": false,
+    "description": "Vaso licuador portátil ideal para batidos de gimnasio y jugos naturales. Excelente margen de ganancia para ventas por mayor y detal."
+  },
+  {
+    "id": "ali-1008",
+    "title": "Termo Vaso Acero Inoxidable 40oz con Asa y Pitillo Térmico Frío/Calor 24h",
+    "category": "Hogar y Cocina",
+    "images": [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Yongkang ThermoCup Industry Co., Ltd.",
+      "years": 9,
+      "verified": true,
+      "rating": 4.9,
+      "city": "Yongkang, China"
+    },
+    "moq": 25,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 25, "maxQty": 99, "price": 4.10 },
+      { "minQty": 100, "maxQty": 299, "price": 3.55 },
+      { "minQty": 300, "maxQty": null, "price": 3.10 }
+    ],
+    "weightKg": 0.55,
+    "volumeCbm": 0.003,
+    "leadTimeDays": "35-45 días (Marítimo)",
+    "featured": true,
+    "description": "Termo de doble pared aislada al vacío de acero inoxidable 304 grado alimenticio, disponible en 18 colores pastel y mate."
+  },
+  {
+    "id": "ali-1009",
+    "title": "Juego de Sartenes Antiadherentes de Granito 10 Piezas Inducción y Gas con Tapas",
+    "category": "Hogar y Cocina",
+    "images": [
+      "https://images.unsplash.com/photo-1584990347449-a5d9f800a783?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Zhejiang Cookware Master Co.",
+      "years": 11,
+      "verified": true,
+      "rating": 4.8,
+      "city": "Jinhua, China"
+    },
+    "moq": 3,
+    "unit": "sets",
+    "priceTiers": [
+      { "minQty": 3, "maxQty": 14, "price": 32.00 },
+      { "minQty": 15, "maxQty": 49, "price": 28.50 },
+      { "minQty": 50, "maxQty": null, "price": 25.00 }
+    ],
+    "weightKg": 6.8,
+    "volumeCbm": 0.048,
+    "leadTimeDays": "35-45 días (Marítimo)",
+    "featured": false,
+    "description": "Batería de cocina premium con recubrimiento de piedra médica libre de PFOA, mangos de tacto frío tipo madera y tapas de vidrio templado."
+  },
+  {
+    "id": "ali-1010",
+    "title": "Lámpara Solar LED Exterior 300W Impermeable IP67 con Sensor de Movimiento y Control",
+    "category": "Hogar y Cocina",
+    "images": [
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Zhongshan SolarBright Lighting Co.",
+      "years": 7,
+      "verified": true,
+      "rating": 4.8,
+      "city": "Zhongshan, China"
+    },
+    "moq": 10,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 10, "maxQty": 49, "price": 12.80 },
+      { "minQty": 50, "maxQty": 199, "price": 10.90 },
+      { "minQty": 200, "maxQty": null, "price": 9.20 }
+    ],
+    "weightKg": 1.9,
+    "volumeCbm": 0.011,
+    "leadTimeDays": "35-45 días (Marítimo)",
+    "featured": false,
+    "description": "Reflector solar de alta potencia para urbanizaciones, galpones y comercios. Autonomía de 12 horas toda la noche sin consumo eléctrico."
+  },
+  {
+    "id": "ali-1011",
+    "title": "Franela Oversize Unisex Algodón Peinado 260 GSM Heavyweight Streetwear sin Marca",
+    "category": "Moda y Calzado",
+    "images": [
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Guangzhou Apparel Stitch Garment Co.",
+      "years": 6,
+      "verified": true,
+      "rating": 4.9,
+      "city": "Guangzhou, China"
+    },
+    "moq": 20,
+    "unit": "piezas",
+    "priceTiers": [
+      { "minQty": 20, "maxQty": 99, "price": 4.90 },
+      { "minQty": 100, "maxQty": 499, "price": 4.10 },
+      { "minQty": 500, "maxQty": null, "price": 3.50 }
+    ],
+    "weightKg": 0.32,
+    "volumeCbm": 0.001,
+    "leadTimeDays": "12-18 días (Aéreo) / 35-45 días (Marítimo)",
+    "featured": true,
+    "description": "Camisetas 100% algodón pesado de 260 gramos corte boxy/oversize. Opción de agregar tu propio estampado DTF o etiqueta privada."
+  },
+  {
+    "id": "ali-1012",
+    "title": "Zapatos Deportivos Running Transpirables Suela EVA Ultraligera Tallas 36-45",
+    "category": "Moda y Calzado",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Quanzhou Jinjiang Footwear Factory",
+      "years": 12,
+      "verified": true,
+      "rating": 4.7,
+      "city": "Quanzhou, China"
+    },
+    "moq": 12,
+    "unit": "pares",
+    "priceTiers": [
+      { "minQty": 12, "maxQty": 59, "price": 9.80 },
+      { "minQty": 60, "maxQty": 239, "price": 8.40 },
+      { "minQty": 240, "maxQty": null, "price": 7.10 }
+    ],
+    "weightKg": 0.75,
+    "volumeCbm": 0.009,
+    "leadTimeDays": "35-45 días (Marítimo recomendado)",
+    "featured": true,
+    "description": "Calzado deportivo directo de la capital del calzado en Jinjiang, malla tejida respirable y plantilla ortopédica de espuma con memoria."
+  },
+  {
+    "id": "ali-1013",
+    "title": "Bolso Bandolera Impermeable Antirrobo con Puerto USB para Hombre y Mujer",
+    "category": "Moda y Calzado",
+    "images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Baigou Leather & Bags Manufacturing",
+      "years": 5,
+      "verified": true,
+      "rating": 4.6,
+      "city": "Baoding, China"
+    },
+    "moq": 20,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 20, "maxQty": 99, "price": 3.60 },
+      { "minQty": 100, "maxQty": 499, "price": 2.95 },
+      { "minQty": 500, "maxQty": null, "price": 2.50 }
+    ],
+    "weightKg": 0.35,
+    "volumeCbm": 0.002,
+    "leadTimeDays": "12-18 días (Aéreo) / 35-45 días (Marítimo)",
+    "featured": false,
+    "description": "Pechera cruzada con candado de combinación TSA, tela Oxford repelente al agua y múltiples compartimentos organizadores."
+  },
+  {
+    "id": "ali-1014",
+    "title": "Lentes de Sol Polarizados UV400 Marco Acetato Retro Lote Surtido para Boutiques",
+    "category": "Moda y Calzado",
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Wenzhou Optical Frame Co., Ltd.",
+      "years": 8,
+      "verified": true,
+      "rating": 4.8,
+      "city": "Wenzhou, China"
+    },
+    "moq": 30,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 30, "maxQty": 99, "price": 2.10 },
+      { "minQty": 100, "maxQty": 499, "price": 1.65 },
+      { "minQty": 500, "maxQty": null, "price": 1.30 }
+    ],
+    "weightKg": 0.08,
+    "volumeCbm": 0.0004,
+    "leadTimeDays": "12-18 días (Aéreo)",
+    "featured": false,
+    "description": "Gafas de sol con filtro real UV400 y bisagras metálicas reforzadas. Peso muy bajo ideal para traer por envío aéreo con excelente rentabilidad."
+  },
+  {
+    "id": "ali-1015",
+    "title": "Conjunto Deportivo Seamless 2 Piezas Leggings Push Up + Top Gym Mujer",
+    "category": "Moda y Calzado",
+    "images": [
+      "https://images.unsplash.com/photo-1518459031867-a89b944bffe4?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Yiwu FitWear Seamless Knitting Co.",
+      "years": 5,
+      "verified": true,
+      "rating": 4.9,
+      "city": "Yiwu, China"
+    },
+    "moq": 15,
+    "unit": "conjuntos",
+    "priceTiers": [
+      { "minQty": 15, "maxQty": 59, "price": 6.80 },
+      { "minQty": 60, "maxQty": 199, "price": 5.90 },
+      { "minQty": 200, "maxQty": null, "price": 5.10 }
+    ],
+    "weightKg": 0.28,
+    "volumeCbm": 0.001,
+    "leadTimeDays": "12-18 días (Aéreo) / 35-45 días (Marítimo)",
+    "featured": false,
+    "description": "Tejido sin costuras de nylon y spandex de alta compresión, no transparenta y seca rápido. Tallas S, M, L y 12 colores disponibles."
+  },
+  {
+    "id": "ali-1016",
+    "title": "Taladro Percutor Inalámbrico Brushless 21V con 2 Baterías Litio + Maletín 28 Accesorios",
+    "category": "Herramientas y Ferretería",
+    "images": [
+      "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Yongkang Titan Power Tools Co., Ltd.",
+      "years": 9,
+      "verified": true,
+      "rating": 4.8,
+      "city": "Yongkang, China"
+    },
+    "moq": 5,
+    "unit": "kits",
+    "priceTiers": [
+      { "minQty": 5, "maxQty": 19, "price": 19.50 },
+      { "minQty": 20, "maxQty": 99, "price": 16.80 },
+      { "minQty": 100, "maxQty": null, "price": 14.90 }
+    ],
+    "weightKg": 2.4,
+    "volumeCbm": 0.0095,
+    "leadTimeDays": "35-45 días (Marítimo)",
+    "featured": true,
+    "description": "Motor sin escobillas (Brushless) de alto torque 65Nm con percutor para concreto, madera y metal. Incluye maletín plástico rígido y cargador 110V."
+  },
+  {
+    "id": "ali-1017",
+    "title": "Caja de Herramientas Mecánicas 108 Piezas Cromo Vanadio Dados y Ratchet 1/4 y 1/2",
+    "category": "Herramientas y Ferretería",
+    "images": [
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Hangzhou ChromeVanadium Hardware Ltd.",
+      "years": 11,
+      "verified": true,
+      "rating": 4.9,
+      "city": "Hangzhou, China"
+    },
+    "moq": 4,
+    "unit": "maletines",
+    "priceTiers": [
+      { "minQty": 4, "maxQty": 19, "price": 23.00 },
+      { "minQty": 20, "maxQty": 79, "price": 19.90 },
+      { "minQty": 80, "maxQty": null, "price": 17.50 }
+    ],
+    "weightKg": 6.2,
+    "volumeCbm": 0.0085,
+    "leadTimeDays": "35-45 días (Marítimo recomendado por peso)",
+    "featured": false,
+    "description": "Set profesional automotriz de acero Cr-V forjado en frío con puntas Torx, hexagonales, copas largas y cortas."
+  },
+  {
+    "id": "ali-1018",
+    "title": "Estación de Soldadura Digital 2 en 1 Pistola de Aire Caliente + Cautín SMD Reparación Celulares",
+    "category": "Herramientas y Ferretería",
+    "images": [
+      "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Shenzhen FixMaster Electronics Equip.",
+      "years": 7,
+      "verified": true,
+      "rating": 4.8,
+      "city": "Shenzhen, China"
+    },
+    "moq": 2,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 2, "maxQty": 9, "price": 28.00 },
+      { "minQty": 10, "maxQty": 49, "price": 24.50 },
+      { "minQty": 50, "maxQty": null, "price": 21.80 }
+    ],
+    "weightKg": 2.8,
+    "volumeCbm": 0.014,
+    "leadTimeDays": "12-18 días (Aéreo) / 35-45 días (Marítimo)",
+    "featured": false,
+    "description": "Doble pantalla LED con control PID de temperatura, modo reposo inteligente y 3 boquillas para microelectrónica y servicio técnico."
+  },
+  {
+    "id": "ali-1019",
+    "title": "Hidrolavadora Portátil Inalámbrica Alta Presión 48V con 2 Baterías y Lanza Espumadora",
+    "category": "Herramientas y Ferretería",
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Taizhou Pump & Washer Machinery Co.",
+      "years": 6,
+      "verified": true,
+      "rating": 4.6,
+      "city": "Taizhou, China"
+    },
+    "moq": 5,
+    "unit": "kits",
+    "priceTiers": [
+      { "minQty": 5, "maxQty": 24, "price": 14.50 },
+      { "minQty": 25, "maxQty": 99, "price": 12.20 },
+      { "minQty": 100, "maxQty": null, "price": 10.60 }
+    ],
+    "weightKg": 1.9,
+    "volumeCbm": 0.009,
+    "leadTimeDays": "35-45 días (Marítimo)",
+    "featured": false,
+    "description": "Pistola lavadora autocebante con manguera de 5 metros y filtro para tomar agua desde tobo o tanque. Muy solicitada para lavado de carros y aires acondicionados."
+  },
+  {
+    "id": "ali-1020",
+    "title": "Secador y Voluminizador de Cabello 5 en 1 Aire Caliente Iónico con Cabezales Intercambiables",
+    "category": "Belleza y Cuidado Personal",
+    "images": [
+      "https://images.unsplash.com/photo-1522338140262-f46f5913618a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Wenzhou GlamCare Beauty Appliances",
+      "years": 5,
+      "verified": true,
+      "rating": 4.7,
+      "city": "Wenzhou, China"
+    },
+    "moq": 5,
+    "unit": "sets",
+    "priceTiers": [
+      { "minQty": 5, "maxQty": 29, "price": 12.90 },
+      { "minQty": 30, "maxQty": 99, "price": 10.80 },
+      { "minQty": 100, "maxQty": null, "price": 9.30 }
+    ],
+    "weightKg": 0.9,
+    "volumeCbm": 0.006,
+    "leadTimeDays": "12-18 días (Aéreo) / 35-45 días (Marítimo)",
+    "featured": true,
+    "description": "Estilizador multifunción con recubrimiento cerámico, rizadores automáticos por flujo de aire, cepillo alisador y secador 1000W 110V."
+  },
+  {
+    "id": "ali-1021",
+    "title": "Lámpara UV/LED Profesional 168W Secador de Uñas Gel con Sensor Automático y Pantalla LCD",
+    "category": "Belleza y Cuidado Personal",
+    "images": [
+      "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Guangzhou NailArt Pro Factory",
+      "years": 8,
+      "verified": true,
+      "rating": 4.8,
+      "city": "Guangzhou, China"
+    },
+    "moq": 10,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 10, "maxQty": 49, "price": 5.80 },
+      { "minQty": 50, "maxQty": 199, "price": 4.90 },
+      { "minQty": 200, "maxQty": null, "price": 4.20 }
+    ],
+    "weightKg": 0.55,
+    "volumeCbm": 0.004,
+    "leadTimeDays": "12-18 días (Aéreo) / 35-45 días (Marítimo)",
+    "featured": false,
+    "description": "42 perlas LED de doble fuente de luz que curan todo tipo de geles en 10-30 segundos sin oscurecer las manos. Base desmontable para pedicura."
+  },
+  {
+    "id": "ali-1022",
+    "title": "Máquina de Afeitar y Cortapelos Profesional Metálica Inalámbrica Barbería T-Blade 0mm",
+    "category": "Belleza y Cuidado Personal",
+    "images": [
+      "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Ningbo ClipperTech Personal Care",
+      "years": 7,
+      "verified": true,
+      "rating": 4.9,
+      "city": "Ningbo, China"
+    },
+    "moq": 10,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 10, "maxQty": 49, "price": 6.20 },
+      { "minQty": 50, "maxQty": 199, "price": 5.10 },
+      { "minQty": 200, "maxQty": null, "price": 4.30 }
+    ],
+    "weightKg": 0.35,
+    "volumeCbm": 0.0015,
+    "leadTimeDays": "12-18 días (Aéreo) / 35-45 días (Marítimo)",
+    "featured": false,
+    "description": "Patillera y trimmer de cuerpo completo en aleación de zinc con cuchilla en T de titanio, pantalla LCD de batería y 4 peines guía."
+  },
+  {
+    "id": "ali-1023",
+    "title": "Compresor de Aire Portátil Digital Inalámbrico 150 PSI Inflador de Cauchos con Linterna LED",
+    "category": "Autopartes y Accesorios",
+    "images": [
+      "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Shenzhen AutoGear Intelligent Co.",
+      "years": 6,
+      "verified": true,
+      "rating": 4.8,
+      "city": "Shenzhen, China"
+    },
+    "moq": 5,
+    "unit": "unidades",
+    "priceTiers": [
+      { "minQty": 5, "maxQty": 29, "price": 11.90 },
+      { "minQty": 30, "maxQty": 99, "price": 10.20 },
+      { "minQty": 100, "maxQty": null, "price": 8.90 }
+    ],
+    "weightKg": 0.58,
+    "volumeCbm": 0.0022,
+    "leadTimeDays": "12-18 días (Aéreo) / 35-45 días (Marítimo)",
+    "featured": true,
+    "description": "Inflador automático con apagado al llegar a la presión configurada (PSI/BAR). Funciona con batería interna o conectado al encendedor 12V del vehículo."
+  },
+  {
+    "id": "ali-1024",
+    "title": "Par de Bombillos LED Automotriz H4/H7/9005 CSP 20000LM 6500K Blanco Frío Canbus Turbo Fan",
+    "category": "Autopartes y Accesorios",
+    "images": [
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80"
+    ],
+    "supplier": {
+      "name": "Guangzhou CarLight Opto Co., Ltd.",
+      "years": 9,
+      "verified": true,
+      "rating": 4.9,
+      "city": "Guangzhou, China"
+    },
+    "moq": 20,
+    "unit": "pares",
+    "priceTiers": [
+      { "minQty": 20, "maxQty": 99, "price": 5.40 },
+      { "minQty": 100, "maxQty": 499, "price": 4.50 },
+      { "minQty": 500, "maxQty": null, "price": 3.80 }
+    ],
+    "weightKg": 0.20,
+    "volumeCbm": 0.0009,
+    "leadTimeDays": "12-18 días (Aéreo) / 35-45 días (Marítimo)",
+    "featured": false,
+    "description": "Kit de luces LED de alta luminosidad con disipador de aluminio de aviación y ventilador silencioso de 12,000 RPM. Resistente al agua IP68."
+  }
+]
