@@ -9,11 +9,22 @@ import {
   PackageSearch,
   ArrowLeft,
   Info,
+  Sparkles,
 } from "lucide-react";
 import { useCart } from "@/lib/cart";
 import { getUnitPriceForQuantity } from "@/lib/products";
+import {
+  CASHEA_TIERS,
+  SHIPPING_CONFIG,
+  calculateInstallmentPlan,
+} from "@/lib/shipping";
 
-type PaymentMethodId = "pagomovil" | "zelle" | "binance" | "transferencia";
+type PaymentMethodId =
+  | "cashea"
+  | "pagomovil"
+  | "zelle"
+  | "binance"
+  | "transferencia";
 
 const PAYMENT_METHODS: {
   id: PaymentMethodId;
@@ -21,6 +32,16 @@ const PAYMENT_METHODS: {
   badge: string;
   instructions: string[];
 }[] = [
+  {
+    id: "cashea",
+    title: "⚡ Cuotas estilo Cashea (Nivel 1 al 6 · 0% Inicial)",
+    badge: "Mínimo $20 USD · 3 cuotas c/14 días",
+    instructions: [
+      "Selecciona abajo tu Nivel en la app (Nivel 1-2: 50% inicial, Nivel 3: 40%, Nivel 4-5: 20%, Nivel 6 Promo: 0% inicial).",
+      "Escanea el código QR del Comercio Aliado o envía el número de orden generado por tu app.",
+      "El resto queda fraccionado en 3 cuotas iguales cada 14 días.",
+    ],
+  },
   {
     id: "pagomovil",
     title: "📱 Pago Móvil (Bs - Tasa BCV / Promedio)",
@@ -73,7 +94,9 @@ export default function CheckoutPage() {
     clearCart,
   } = useCart();
 
-  const [selectedPayment, setSelectedPayment] = useState<PaymentMethodId>("zelle");
+  const [selectedPayment, setSelectedPayment] =
+    useState<PaymentMethodId>("cashea");
+  const [casheaTierId, setCasheaTierId] = useState<string>("nivel-6-promo");
   const [customerName, setCustomerName] = useState("");
   const [cedulaRif, setCedulaRif] = useState("");
   const [phone, setPhone] = useState("");
@@ -84,7 +107,22 @@ export default function CheckoutPage() {
   const [orderCompleted, setOrderCompleted] = useState(false);
   const [generatedOrderId, setGeneratedOrderId] = useState("");
 
-  const activePaymentMethod = PAYMENT_METHODS.find((m) => m.id === selectedPayment)!;
+  const activePaymentMethod = PAYMENT_METHODS.find(
+    (m) => m.id === selectedPayment
+  )!;
+  const activeCasheaTier =
+    CASHEA_TIERS.find((t) => t.id === casheaTierId) || CASHEA_TIERS[0];
+
+  const baseOrderTotal = grandTotalEstimatedUsd || 203.48;
+  const casheaPlan = calculateInstallmentPlan(
+    baseOrderTotal,
+    activeCasheaTier.initialPercent
+  );
+
+  const amountDueTodayUsd =
+    selectedPayment === "cashea"
+      ? casheaPlan.initialPaymentUsd
+      : alibabaSubtotalUsd || 156.0;
 
   const handleConfirmOrder = (e: React.FormEvent) => {
     e.preventDefault();
@@ -105,17 +143,31 @@ export default function CheckoutPage() {
             Orden de Importación Creada: #{generatedOrderId}
           </span>
           <h1 className="text-2xl sm:text-3xl font-black text-brand-navy">
-            ¡Tu pedido a precio Alibaba está en marcha!
+            ¡Tu pedido de Alibaba / SHEIN está en marcha!
           </h1>
           <p className="text-sm text-slate-600 max-w-xl mx-auto leading-relaxed">
-            Gracias, <strong>{customerName}</strong>. Validaremos tu pago por <strong>{activePaymentMethod.title}</strong> (Ref: {referenceCode}) y procederemos a comprar tu mercancía directamente al proveedor en China.
+            Gracias, <strong>{customerName}</strong>. Validaremos tu operación
+            por <strong>{activePaymentMethod.title}</strong> (Ref:{" "}
+            {referenceCode}) y nuestro contacto en China procederá con la compra
+            y consolidación hacia <strong>{stateCity}</strong>.
           </p>
 
           <div className="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-left text-xs space-y-1.5 max-w-lg mx-auto">
-            <p className="font-bold text-brand-navy">Próximos pasos de tu importación:</p>
-            <p className="text-slate-600">1. Compramos tu pedido en Alibaba y lo recibimos en nuestro almacén de Guangzhou/Shenzhen.</p>
-            <p className="text-slate-600">2. Pesamos/cubicamos tu carga y la embarcamos hacia <strong>{stateCity}</strong>.</p>
-            <p className="text-slate-600">3. Al llegar a Venezuela, liquidas el flete/nacionalización y recibes tus productos.</p>
+            <p className="font-bold text-brand-navy">
+              Próximos pasos de tu importación:
+            </p>
+            <p className="text-slate-600">
+              1. Nuestro equipo en China compra el pedido y lo recibe en bodega
+              (Guangzhou/Shenzhen).
+            </p>
+            <p className="text-slate-600">
+              2. Se consolida y despacha por courier hacia{" "}
+              <strong>{stateCity}</strong>.
+            </p>
+            <p className="text-slate-600">
+              3. Si elegiste plan en cuotas, tus 3 cuotas quedan programadas
+              cada 14 días.
+            </p>
           </div>
 
           <div className="pt-3 flex flex-col sm:flex-row gap-3 justify-center">
@@ -153,7 +205,7 @@ export default function CheckoutPage() {
           {/* Paso 1: Datos de entrega en Venezuela */}
           <div className="bg-white rounded-3xl border border-slate-200 p-6 space-y-4">
             <h2 className="text-lg font-black text-brand-navy">
-              1. Datos del Importador y Entrega en Venezuela
+              1. Datos del Cliente y Entrega en Venezuela
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -235,7 +287,7 @@ export default function CheckoutPage() {
           {/* Paso 2: Selección de Método de Pago en Venezuela */}
           <div className="bg-white rounded-3xl border border-slate-200 p-6 space-y-4">
             <h2 className="text-lg font-black text-brand-navy">
-              2. Método de Pago (Pago 1: Compra de Mercancía a Precio Alibaba)
+              2. Elige Método de Pago (De Contado o Financiamiento estilo Cashea)
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -248,17 +300,84 @@ export default function CheckoutPage() {
                     selectedPayment === m.id
                       ? "border-brand-orange bg-amber-50/70 ring-2 ring-brand-orange/20"
                       : "border-slate-200 hover:bg-slate-50"
-                  }`}
+                  } ${m.id === "cashea" ? "sm:col-span-2" : ""}`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="font-extrabold text-xs text-brand-navy">{m.title}</span>
+                    <span className="font-extrabold text-xs sm:text-sm text-brand-navy">
+                      {m.title}
+                    </span>
+                    <span className="text-[10px] font-bold bg-white border border-slate-200 px-2 py-0.5 rounded text-brand-orange">
+                      {m.badge}
+                    </span>
                   </div>
-                  <span className="inline-block mt-1 text-[10px] font-bold bg-white border border-slate-200 px-2 py-0.5 rounded text-slate-600">
-                    {m.badge}
-                  </span>
                 </button>
               ))}
             </div>
+
+            {/* Si elige Cashea, mostrar selector de Nivel 1 al 6 */}
+            {selectedPayment === "cashea" && (
+              <div className="bg-amber-50/90 border border-amber-300 rounded-2xl p-4 space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-extrabold text-brand-navy flex items-center gap-1.5">
+                    <Sparkles className="w-4 h-4 text-brand-orange" />
+                    Selecciona tu Nivel de Financiamiento (Mínimo $
+                    {SHIPPING_CONFIG.installmentsMinOrderUsd} USD):
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                  {CASHEA_TIERS.map((tier) => (
+                    <button
+                      key={tier.id}
+                      type="button"
+                      onClick={() => setCasheaTierId(tier.id)}
+                      className={`p-2.5 rounded-xl border text-center transition-all ${
+                        casheaTierId === tier.id
+                          ? "bg-brand-navy text-white border-brand-navy"
+                          : "bg-white text-slate-700 border-amber-200"
+                      }`}
+                    >
+                      <div className="text-xs font-extrabold">{tier.name}</div>
+                      <div
+                        className={`text-[11px] font-bold ${
+                          casheaTierId === tier.id
+                            ? "text-amber-300"
+                            : "text-brand-orange"
+                        }`}
+                      >
+                        {tier.badge}
+                      </div>
+                    </button>
+                  ))}
+                </div>
+
+                <div className="bg-white rounded-xl p-3 border border-amber-200 grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+                  <div>
+                    <span className="text-slate-500 block">
+                      Total Financiado (con flete):
+                    </span>
+                    <strong className="text-sm font-black text-slate-900">
+                      ${casheaPlan.financedTotalUsd.toFixed(2)} USD
+                    </strong>
+                  </div>
+                  <div>
+                    <span className="text-slate-500 block">
+                      Inicial Hoy ({activeCasheaTier.initialPercent}%):
+                    </span>
+                    <strong className="text-base font-black text-brand-navy">
+                      ${casheaPlan.initialPaymentUsd.toFixed(2)} USD
+                    </strong>
+                  </div>
+                  <div>
+                    <span className="text-slate-500 block">
+                      3 Cuotas (cada 14 días):
+                    </span>
+                    <strong className="text-base font-black text-brand-orange">
+                      ${casheaPlan.eachInstallmentUsd.toFixed(2)} USD c/u
+                    </strong>
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* Datos bancarios del método elegido */}
             <div className="bg-brand-navy text-white rounded-2xl p-4 space-y-2 text-xs">
@@ -267,7 +386,7 @@ export default function CheckoutPage() {
                   Instrucciones para {activePaymentMethod.title}
                 </span>
                 <span className="font-black text-sm">
-                  Monto a abonar hoy: ${(alibabaSubtotalUsd || 156.0).toFixed(2)} USD
+                  Monto a abonar hoy: ${amountDueTodayUsd.toFixed(2)} USD
                 </span>
               </div>
               <ul className="space-y-1 text-slate-200 list-disc list-inside">
@@ -281,14 +400,14 @@ export default function CheckoutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Número de Referencia / Confirmación *
+                  Número de Referencia / Orden de App *
                 </label>
                 <input
                   type="text"
                   required
                   value={referenceCode}
                   onChange={(e) => setReferenceCode(e.target.value)}
-                  placeholder="Ej. 94827104"
+                  placeholder="Ej. CASHEA-948271 o Ref Bancaria"
                   className="w-full px-3.5 py-2.5 text-sm border border-slate-300 rounded-xl"
                 />
               </div>
@@ -320,7 +439,8 @@ export default function CheckoutPage() {
               type="submit"
               className="w-full bg-brand-orange hover:bg-brand-orangeHover text-white font-extrabold text-sm py-4 rounded-2xl shadow-lg transition-colors"
             >
-              Confirmar Pago de Mercancía (${(alibabaSubtotalUsd || 156.0).toFixed(2)} USD) y Procesar Compra en Alibaba
+              Confirmar Operación (Abono Hoy: ${amountDueTodayUsd.toFixed(2)}{" "}
+              USD) y Procesar Pedido en China
             </button>
           </div>
         </form>
@@ -335,37 +455,49 @@ export default function CheckoutPage() {
             {items.length > 0 ? (
               <div className="space-y-2.5 max-h-60 overflow-y-auto pr-1 text-xs">
                 {items.map((item) => (
-                  <div key={item.product.id} className="flex justify-between gap-2 border-b border-slate-100 pb-2">
+                  <div
+                    key={item.product.id}
+                    className="flex justify-between gap-2 border-b border-slate-100 pb-2"
+                  >
                     <span className="text-slate-700 line-clamp-1 font-medium">
                       {item.quantity}x {item.product.title}
                     </span>
                     <strong className="text-slate-900 shrink-0">
-                      ${(getUnitPriceForQuantity(item.product, item.quantity) * item.quantity).toFixed(2)}
+                      $
+                      {(
+                        getUnitPriceForQuantity(item.product, item.quantity) *
+                        item.quantity
+                      ).toFixed(2)}
                     </strong>
                   </div>
                 ))}
               </div>
             ) : (
               <p className="text-xs text-slate-500">
-                Modo demostración: Orden de ejemplo lista para probar el flujo visual.
+                Modo demostración: Orden de ejemplo lista para probar el flujo
+                visual.
               </p>
             )}
 
             <div className="space-y-2 text-xs pt-2 border-t border-slate-200">
               <div className="flex justify-between">
-                <span className="text-slate-600 font-semibold">1. Pago Hoy (Costo Alibaba):</span>
+                <span className="text-slate-600 font-semibold">
+                  1. Costo Productos (Alibaba/SHEIN):
+                </span>
                 <strong className="text-base text-brand-navy">
                   ${(alibabaSubtotalUsd || 156.0).toFixed(2)} USD
                 </strong>
               </div>
               <div className="flex justify-between text-amber-800">
-                <span>2. Flete + Aduana (Se paga al llegar):</span>
-                <strong>~${(estimatedLogisticsUsd || 47.48).toFixed(2)} USD</strong>
+                <span>2. Flete + Aduana + Gestión:</span>
+                <strong>
+                  ~${(estimatedLogisticsUsd || 47.48).toFixed(2)} USD
+                </strong>
               </div>
               <div className="flex justify-between font-black text-sm text-slate-900 pt-2 border-t border-slate-100">
-                <span>Total Estimado Final:</span>
+                <span>Total de Contado:</span>
                 <span className="text-brand-orange">
-                  ${(grandTotalEstimatedUsd || 203.48).toFixed(2)} USD
+                  ${baseOrderTotal.toFixed(2)} USD
                 </span>
               </div>
             </div>
@@ -373,14 +505,17 @@ export default function CheckoutPage() {
             <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-3 text-[11px] text-emerald-900 flex gap-2">
               <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
               <span>
-                <strong>Garantía Universo Imports:</strong> Si el proveedor en Alibaba no tiene stock, te reembolsamos el 100% o buscamos otra fábrica equivalente.
+                <strong>Alianza China + Venezuela:</strong> Compramos directo en
+                1688/Alibaba/SHEIN desde nuestra bodega en China y despachamos a
+                todo el país.
               </span>
             </div>
 
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 text-[11px] text-amber-900 flex gap-2">
               <Info className="w-4 h-4 text-brand-orange shrink-0 mt-0.5" />
               <span>
-                El flete y nacionalización se calculan con el peso/volumen real al recibir tu carga en nuestro almacén de China.
+                Con el plan en cuotas estilo Cashea (mínimo $20 USD) puedes
+                llevar tu pedido según tu nivel (desde 50% hasta 0% de inicial).
               </span>
             </div>
           </div>
